@@ -1,0 +1,147 @@
+.inputs input {
+  width: 100%;
+}
+
+.lastname,
+.firstname {
+  width: 100%;
+  border: solid 2px var(--fade) !important;
+  input {
+    outline: none;
+    border: none;
+  }
+}
+.address-con {
+  border: solid 2px var(--fade) !important;
+}
+.address-con input {
+  outline: none;
+  border: none;
+}
+.checkout-summary-section {
+  margin-top: 13vh;
+}
+
+.product-qauntity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-price {
+  margin-left: auto;
+}
+
+.bi {
+  width: 2rem;
+}
+
+.icon {
+  color: var(--sc);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.location-icon {
+  color: var(--pc);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.add-address {
+  color: var(--sc);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.number {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: var(--pc);
+  background-color: var(--sc);
+  border-radius: 50%;
+}
+
+.head h4 {
+  font-weight: bold;
+  color: var(--pc);
+}
+.s-delivery,
+.e-delivery {
+  width: 100%;
+}
+
+.delivery-text {
+  margin-right: auto;
+}
+
+.back {
+  width: 40px;
+  height: 40px;
+  font-size: 3rem;
+  background-color: var(--fade);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verified {
+  color: var(--pc);
+}
+
+.btn {
+  color: var(--fade) !important;
+  background-color: var(--sc);
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  &:hover {
+    background-color: var(--scf);
+    color: var(--pc) !important;
+  }
+}
+
+.secure-ssl,
+.secure-ssl-payment {
+  text-decoration: none !important;
+  color: var(--pc);
+  text-align: center !important;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.total-amount {
+  font-size: 1.7rem;
+  color: var(--sc);
+  font-weight: bold;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.product-image {
+  width: 7.9rem;
+  height: 8.167rem;
+  border-radius: 1rem;
+  corner-shape: squircle;
+  overflow: hidden;
+  border: 1px solid var(--pcf);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.product-image img {
+  width: 100px;
+  height: 5rem;
+  object-fit: cover;
+}
+
+.product-name {
+  line-height: 1.5;
+}

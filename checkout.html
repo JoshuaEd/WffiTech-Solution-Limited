@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaffiMart</title>
+    <link rel="stylesheet" href="styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/customstyles/customstyles.css">
+    <link rel="stylesheet" href="/customstyles/checkout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="/icon/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+
+            <div class="logo"><a class="nav-link" href="/waffimart.html">Waffi<span class="mart">Mart</span></a></div>
+            <div class="search-container">
+                <div class="search-icon  ">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e3e3e3">
+                        <path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg>
+                </div>
+                <input class="search-bar" type="text" placeholder="Search products, brands and categories">
+            </div>
+            <div class="header-icon">
+                <a class="nav-links" href="/">
+
+                    <div class="location-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e3e3e3">
+                            <path
+                                d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                        </svg>
+                    </div>
+
+
+                </a>
+                <a class="nav-links" href="/">
+
+                    <div class="cart-icon relative">
+                        <div class="cart-barge">
+                            <p class="barge-number">0</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e3e3e3">
+                            <path
+                                d="M223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+                        </svg>
+                    </div>
+                </a>
+                <a class="nav-links" href="/">
+                    <div class="person-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e3e3e3">
+                            <path
+                                d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm146.5-204.5Q340-521 340-580t40.5-99.5Q421-720 480-720t99.5 40.5Q620-639 620-580t-40.5 99.5Q539-440 480-440t-99.5-40.5ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm100-95.5q47-15.5 86-44.5-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160q53 0 100-15.5ZM523-537q17-17 17-43t-17-43q-17-17-43-17t-43 17q-17 17-17 43t17 43q17 17 43 17t43-17Zm-43-43Zm0 360Z" />
+                        </svg>
+                    </div>
+
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="checkout-summary-section">
+        <div class="container mb-4">
+            <div class="d-flex gap-3 align-items-center ">
+                <div class="icon back">
+                    <i class=" bi-arrow-left-short"></i>
+                </div>
+                <div class="heade">
+                    <h2 class=" fw-bold">Secure Checkout</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container gap-3  d-lg-flex gap-5 ">
+
+            <div class="left-col col-lg-8  ">
+
+
+                <div class="customer-details-con card p-5 mb-4 rounded-3">
+                    <div class="customer-address head d-flex align-items-center mb-4 gap-4 ">
+                        <div class="number">1</div>
+                        <h4>Delivery Address</h4>
+                    </div>
+                    <div class="inputs  ">
+                        <form action="">
+                            <div class="name-con  mb-3 d-lg-flex gap-3">
+                                <div class="firstname p-3 outlined border border-2 rounded-3">
+                                    <label for="firstname">First Name</label>
+                                    <input type="text" value="Oshehor" name="firstname" id="firstname">
+                                </div>
+                                <div class="lastname p-3 outlined border border-2 rounded-3 mt-sm-3 m-lg-0"><label
+                                        for="lastname">Last
+                                        Name</label>
+                                    <input type="text" value="Kesiena" name="lastname" id="lastname">
+                                </div>
+
+                            </div>
+                            <div class="address-con mb-3 p-3 border border-2 rounded-3">
+                                <label for="address">Stree Address</label>
+                                <div class="addres-input d-lg-flex gap-2">
+                                    <span class="location-icon">
+                                        <i class="bi bi-geo-alt"></i>
+                                    </span>
+                                    <input type="text" value="Orhuwhorun, Udu" name="address" id="address">
+                                </div>
+
+                            </div>
+                        </form>
+                        <a href="@" class="add-address ">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <span class="icon">
+                                        <i class="bi bi-plus"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    Add New Address
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Delivery method 2 -->
+                <div class="delivery-method-con card p-5 mb-4 rounded-3 ">
+                    <div class="delivery-method head mb-4 d-flex align-items-center gap-4 ">
+                        <div class="number">2</div>
+                        <h4>Delivery Method</h4>
+                    </div>
+                    <div class="methods gap-5 d-lg-flex">
+
+
+                        <label for="delivery"
+                            class="s-delivery  p-3 border rounded-3 gap-5 d-flex justify-content-between align-items-center">
+
+                            <span class="icon">
+                                <i class="bi bi-truck"></i>
+                            </span>
+                            <div class="delivery-text">
+                                <p>Standard Delivery</p>
+                                <small>3-5 Business Days</small>
+                            </div>
+                            <div>Free</div>
+
+                            <input type="radio" id="standard-delivery" name="delivery">
+
+                        </label>
+                        <!-- <><><><><>< -->
+                        <label for="delivery"
+                            class="e-delivery d-flex gap-5 justify-content-between border rounded-3 p-3 align-items-center">
+                            <span class="icon">
+                                <i class="bi bi-lightning-charge"></i>
+                            </span>
+                            <div class="delivery-text">
+                                <p>Express Delivery</p>
+                                <small>Tomorrow, by 12 PM</small>
+                            </div>
+                            <div class="express-d-price">N3900.00</div>
+                            <input type="radio" name="delivery" id="exclusive-delivery">
+
+                        </label>
+
+
+
+
+
+
+                    </div>
+                </div>
+                <!-- Payment method -->
+                <div class="payment-method-con card p-5 mb-4 rounded-3">
+                    <div class="delivery-method head mb-4 d-flex align-items-center gap-4 ">
+                        <div class="number">3</div>
+                        <h4>Payment Method</h4>
+                    </div>
+                    <div class="methods">
+                        <form action="" class="d-l gap-5">
+                            <label for="card-payment" class="d-block">
+                                <div class="radio-con d-flex  align-items-center gap-3 p-2 border rounded-3 mb-2 ">
+                                    <div class="r-con">
+                                        <input type="radio" name="payment-method" id="card-payment">
+                                    </div>
+
+
+
+                                    <span class="icon">
+                                        <i class="bi bi-credit-card-2-front"></i>
+                                    </span>
+                                    Credit or Debit Card
+                                </div>
+                            </label>
+
+                            <label for="mobile-payment" class="d-block">
+                                <div class="radio-con d-flex align-items-center rounded-3 gap-3 p-2 border mt-2">
+                                    <div class="r-con">
+                                        <input type="radio" name="payment-method" id="mobile-payment">
+                                    </div>
+                                    <span class="icon">
+                                        <i class="bi bi-phone"></i>
+                                    </span>
+                                    Mobile Money
+                            </label>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <aside class="order-summary right-col col ">
+
+            <div class="card p-5 rounded-3 card-summary-js">
+                <div class="product-container-js">
+                    <h4 class="order-summary-h fw-bold mb-4">Order Summary</h4>
+                    <!-- Generated by JS -->
+                </div>
+
+                <div class="product-calculations-js">
+                    <!-- Generated by JS -->
+                    <!-- <div class="calculatons">
+                    <div class="subtotal-con mb-2 d-flex justify-content-between">
+                        <div class="subtotal">Subtotal</div>
+                        <div class="subtotal-price">N3892.00</div>
+                    </div>
+                    <div class="shipping-con  mb-2 d-flex justify-content-between">
+                        <div class="shipping">Shipping</div>
+                        <div class="shipping-price">Free</div>
+                    </div>
+                    <div class="tax-con mb-2 d-flex justify-content-between">
+                        <div class="taxes">Taxes</div>
+                        <div class="tax-price">N3023</div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="total-con mb-4 mt-3 d-flex justify-content-between">
+                    <div class="total">Total</div>
+                    <div class="total-amount">N3293.00</div>
+                </div>
+                <button class="btn btn-warning"> <i class=" me-2 bi-lock-fill"></i>Place
+                    Order</button>
+                <a href="#" class="secure-ssl-payment">
+                    <small class="secure-ssl">
+                        <i class="bi me-2 bi-key"></i>Secure SLL Encrypted Checkout
+                    </small>
+                </a> -->
+
+                </div>
+
+
+
+
+
+            </div>
+
+        </aside>
+
+        </div>
+    </section>
+
+    <script type="module" src="/script/checkout.js"></script>
+</body>
+
+</html>

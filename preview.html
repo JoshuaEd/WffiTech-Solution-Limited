@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaffiMart</title>
+    <link rel="stylesheet" href="styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/customstyles/preview.css">
+    <link rel="stylesheet" href="/customstyles/checkout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="/icon/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+
+            <div class="logo"><a class="nav-link" href="/waffimart.html">Waffi<span class="mart">Mart</span></a></div>
+            <div class="search-container">
+                <div class="search-icon  ">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e3e3e3">
+                        <path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg>
+                </div>
+                <input class="search-bar" type="text" placeholder="Search products, brands and categories">
+            </div>
+            <div class="header-icon">
+                <a class="nav-links" href="/">
+
+                    <div class="location-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e3e3e3">
+                            <path
+                                d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                        </svg>
+                    </div>
+
+
+                </a>
+                <a class="nav-links" href="/">
+
+                    <div class="cart-icon relative">
+                        <div class="cart-barge">
+                            <p class="barge-number">0</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e3e3e3">
+                            <path
+                                d="M223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+                        </svg>
+                    </div>
+                </a>
+                <a class="nav-links" href="/">
+                    <div class="person-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e3e3e3">
+                            <path
+                                d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm146.5-204.5Q340-521 340-580t40.5-99.5Q421-720 480-720t99.5 40.5Q620-639 620-580t-40.5 99.5Q539-440 480-440t-99.5-40.5ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm100-95.5q47-15.5 86-44.5-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160q53 0 100-15.5ZM523-537q17-17 17-43t-17-43q-17-17-43-17t-43 17q-17 17-17 43t17 43q17 17 43 17t43-17Zm-43-43Zm0 360Z" />
+                        </svg>
+                    </div>
+
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Product  -->
+    <section class="preview-section-container  ">
+
+        <div class="container gap-3 d-lg-flex d-sm-block">
+            <div class="item-summary me-4 col-lg-8 ">
+                <div class="item-active-image relative">
+                    <button class="absolute fav-icon">
+                        <svg class="f-icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                            width="20px" fill="#1f1f1f">
+                            <path
+                                d="m480-144-50-45q-100-89-165-152.5t-102.5-113Q125-504 110.5-545T96-629q0-89 61-150t150-61q49 0 95 21t78 59q32-38 78-59t95-21q89 0 150 61t61 150q0 43-14 83t-51.5 89q-37.5 49-103 113.5T528-187l-48 43Zm0-97q93-83 153-141.5t95.5-102Q764-528 778-562t14-67q0-59-40-99t-99-40q-35 0-65.5 14.5T535-713l-35 41h-40l-35-41q-22-26-53.5-40.5T307-768q-59 0-99 40t-40 99q0 33 13 65.5t47.5 75.5q34.5 43 95 102T480-241Zm0-264Z" />
+                        </svg>
+                    </button>
+
+                    <img class="rounded-4 mb-3" src="/img/aura_headphone_landscape.jpg" alt="">
+
+                    <div class="item-other-image   ">
+                        <div>
+                            <div class=" group flex-nowrap d-flex overflow-x-hidden d-flex-lg d-flex-sm my-3 gap-3">
+                                <img class="rounded-4 shadow active-item" src="/img/landscape_16x9_1.jpg" alt="">
+                                <img class="rounded-4 shadow" src="/img/landscape_16x9_2.jpg" alt="">
+                                <img class="rounded-4 shadow" src="/img/landscape_16x9_3.jpg" alt="">
+                                <img class="rounded-4 shadow" src="/img/landscape_16x9_5.jpg" alt="">
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- summary total -->
+            <aside class="item-details mt-sm-5 mt-lg-0">
+                <div>
+                    <p class="good-type  mb-2">ARTISAN GOODS <span
+                            class="local rounded-pill  py-1 px-3 text-light fw-bold ">
+                            <svg class="local-delivery" xmlns="http://www.w3.org/2000/svg" height="20px"
+                                viewBox="0 -960 960 960" width="20px" fill="#1f1f1f">
+                                <path
+                                    d="M155-227q-35-35-35-85H48v-408q0-29.7 21.15-50.85Q90.3-792 120-792h552v144h120l120 168v168h-72q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35q-50 0-85-35Zm119-51q14-14 14-34t-14-34q-14-14-34-14t-34 14q-14 14-14 34t14 34q14 14 34 14t34-14ZM120-384h24q17-23 42-35.5t54-12.5q29 0 54 12.5t41.53 35.5H600v-336H120v336Zm634 106q14-14 14-34t-14-34q-14-14-34-14t-34 14q-14 14-14 34t14 34q14 14 34 14t34-14Zm-82-178 168-1-85-119h-83v120Zm-310-93Z" />
+                            </svg> Local</span></p>
+                </div>
+                <p class="item-name mb-2">Midnight State Ceramic Mug</p>
+                <p class="summary-price ">893.99 <span class="ratings">Stars</span> <span>(43 reviews)</span> </p>
+                <div class="availability-details card p-3 shadow-sm my-5">
+                    <div class="availability-con d-flex justify-content-between">
+                        <div class="availability">Availability:</div>
+                        <div class="instock fw-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                                fill="#1f1f1f">
+                                <path
+                                    d="m429-336 238-237-51-51-187 186-85-84-51 51 136 135Zm51 240q-79 0-149-30t-122.5-82.5Q156-261 126-331T96-480q0-80 30-149.5t82.5-122Q261-804 331-834t149-30q80 0 149.5 30t122 82.5Q804-699 834-629.5T864-480q0 79-30 149t-82.5 122.5Q699-156 629.5-126T480-96Zm0-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312Z" />
+                            </svg>
+                            In Stock (5 left)
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="delivery-est d-flex justify-content-between">
+                        <div>
+                            <p class="avb">Delivery Estimate:</p>
+                        </div>
+                        <div>
+                            <p class="day-time fw-bold">Tomorrow, by 5:00 PM</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="quantity-data ">
+
+                    <div class="qty-val-btn  ">
+                        <p>Quantity</p>
+                        <div class="d-flex gap-2 justify-content-between gap-4">
+                            <div class="quantity-btn d-flex justify-content-between align-items-center gap-2 col-2">
+                                <button class="dec btn btn-warning fw-bold p-2">-</button>
+                                <p class="btn btn-warning ">0</p>
+                                <button class="incr btn-warning btn fw-bold p-2">+</button>
+                            </div>
+                            <button class="add-to-cart btn btn-warning d-flex justify-content-center gap-3">
+
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960"
+                                        width="15px" fill="#1f1f1f">
+                                        <path
+                                            d="M216-96q-29.7 0-50.85-21.15Q144-138.3 144-168v-480q0-29.7 21.15-50.85Q186.3-720 216-720h72q0-79.68 56.23-135.84 56.22-56.16 136-56.16Q560-912 616-855.84q56 56.16 56 135.84h72q29.7 0 50.85 21.15Q816-677.7 816-648v480q0 29.7-21.15 50.85Q773.7-96 744-96H216Zm0-72h528v-480H216v480Zm400-272.16q56-56.16 56-135.84h-72q0 50-35 85t-85 35q-50 0-85-35t-35-85h-72q0 80 56.23 136 56.22 56 136 56Q560-384 616-440.16ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM216-168v-480 480Z" />
+                                    </svg>
+                                    Add to Cart
+                                </span>
+                            </button>
+
+                        </div>
+
+
+                    </div>
+                    <div class="d-flex">
+                        <button class="buy-cta btn fw-bold my-3 w-100 p-2 text- ">Buy Now with 1-click</button>
+                    </div>
+                </div>
+
+
+                <div class="description-con my-3">
+                    <h4 class="description-h fw-bold">Description</h4>
+                    <p class="description">
+                        Hand-thrown by local artisans, this ceramic mug features a unique midnight slate glaze that
+                        fades
+                        beautifully into a soft lavender rim. Perfect for your morning coffee or evening tea. Microwave
+                        and
+                        dishwasher safe, though hand-washing is recommended to preserve the finish.
+                    </p>
+                </div>
+
+                <div class="vendor-card shadow-sm card my-3">
+                    <div class="vendor-details p-3">
+                        <div class="d-flex justify-content-lg-around align-items-center gap-4 mb-3">
+                            <div class="profile-img ">
+                                <img src="/img/people-market.jpg" alt="">
+                            </div>
+                            <div class="vend-info">
+                                <h4 class="name">Clay & Klin Studio <i class="bi bi-patch-check"></i></h4>
+                                <p class="verified-status">Verified Local Seller . Joined 2020</p>
+                                <div class="reputation-con">
+                                    <span class="text-success p-1 rounded-pill border-5 ">98% POSITIVE</span>
+                                    <span class="">Reputation </span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <a href="https:www.instagram.com" target="_blank"
+                            class="social fw-bold border btn-outline p-2 w-100 rounded btn "> <i
+                                class="bi bi-instagram"></i>
+                            Follow on Instagram</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+    </section>
+
+    <!-- reviews -->
+    <section class="customer-reviews">
+        <div class="container">
+
+            <div class="reviews-links">
+                <ul>
+                    <li><a href="">Customer Reviews (42)</a></li>
+                    <li><a href="">Vendor Details</a></li>
+                    <li><a href="">Shipping & Returns</a></li>
+                </ul>
+                <hr>
+            </div>
+            <div class="review-container my-4 d-lg-flex d-sm-block gap-5">
+                <div class="ratings-card col-lg-3 shadow-sm card p-3">
+                    <h4 class="my-3">Rating Overview</h4>
+                    <div class="stars my-2 ">
+                        <div class="d-flex gap-3 align-items-center">
+                            <div>4.8</div>
+                            <div class="rates">
+                                <div class="star-icon"> <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <p>Based on 42 reviews</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn p-2 btn-warning">Write a Review</a>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <div class="reviews-card mt-sm-3 mt-lg-0 col-md-12  shadow-sm card p-3">
+                        <div class="profile d-flex justify-content-between">
+                            <div class="profile-image d-flex gap-3">
+                                <div>
+                                    <div class="initial">
+                                        JD
+                                    </div>
+                                    <img src="" alt="">
+
+                                </div>
+                                <div class="profile-text">
+                                    <p class="name">Jane Doe</p>
+                                    <p class="time">2 days ago</p>
+                                </div>
+                            </div>
+
+                            <div class="profile-stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat odio iste nam aliquam,
+                            molestias maiores fugiat nobis facilis ex natus error harum ducimus consequatur ullam
+                            doloremque
+                            libero commodi dignissimos fugit.</p>
+                        <div class="product mt- rounded-3">
+                            <img class="rounded-3 " src="/img/landscape_16x9_4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="reviews-card"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+    <script type="module" src="/script/checkout.js"></script>
+</body>
+
+</html>
